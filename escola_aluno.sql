@@ -27,10 +27,15 @@ CREATE TABLE `aluno` (
   `nome` varchar(50) NOT NULL,
   `prontuario` char(7) NOT NULL,
   `telefone` char(13) NOT NULL,
-  `email` varchar(30) NOT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `endereco` varchar(60) DEFAULT NULL,
+  `bairro` varchar(30) DEFAULT NULL,
+  `cidade` varchar(30) DEFAULT NULL,
+  `estado` varchar(2) DEFAULT NULL,
+  `cep` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `prontuario` (`prontuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=61 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,7 +44,7 @@ CREATE TABLE `aluno` (
 
 LOCK TABLES `aluno` WRITE;
 /*!40000 ALTER TABLE `aluno` DISABLE KEYS */;
-INSERT INTO `aluno` VALUES (1,'Thiago Henrique dos Santos','1561839','5511986082341','thiago.santos@aveva.com'),(2,'Edicrede Almeida Machado','1267361','5511964152244','edicrede@gmail.com'),(3,'Lucas Gomes','1370529','5511964152244','s.gome@aluno.ifsp.edu.br'),(4,'','','',''),(5,'Adriana De Oliveira','166753','5511978942689','aluno@gmail.com'),(6,'Adriano Aparecido','1567632','5511978942689','aluno@gmail.com'),(7,'Amanda Penteado','1575082','5511978942689','aluno@gmail.com'),(8,'Cintia Tiaki','1466534','5511978942689','aluno@gmail.com'),(9,'Daniela Helena','1666461','5511978942689','aluno@gmail.com'),(10,'Edigard Menezes','1360272','5511978942689','aluno@gmail.com'),(11,'Edson Soares','1364995','5511978942689','aluno@gmail.com'),(12,'Jose Augosto','1271954','5511978942689','aluno@gmail.com'),(13,'Leonardo Leite','1762559','5511978942689','aluno@gmail.com'),(14,'Leonardo Salgado','1762036','5511978942689','aluno@gmail.com'),(15,'Luciana Durante','1565893','5511978942689','aluno@gmail.com');
+INSERT INTO `aluno` VALUES (1,'Thiago Henrique dos Santos','1561839','5511986082341','thiago.santos@aveva.com',NULL,NULL,NULL,NULL,NULL),(2,'Edicrede Almeida Machado','1267361','5511964152244','edicrede@gmail.com',NULL,NULL,NULL,NULL,NULL),(3,'Lucas Gomes','1370529','5511964152244','s.gome@aluno.ifsp.edu.br',NULL,NULL,NULL,NULL,NULL),(5,'Adriana De Oliveira','166753','5511978942689','aluno@gmail.com',NULL,NULL,NULL,NULL,NULL),(6,'Adriano Aparecido','1567632','5511978942689','aluno@gmail.com',NULL,NULL,NULL,NULL,NULL),(7,'Amanda Penteado','1575082','5511978942689','aluno@gmail.com',NULL,NULL,NULL,NULL,NULL),(8,'Cintia Tiaki','1466534','5511978942689','aluno@gmail.com',NULL,NULL,NULL,NULL,NULL),(9,'Daniela Helena','1666461','5511978942689','aluno@gmail.com',NULL,NULL,NULL,NULL,NULL),(10,'Edigard Menezes','1360272','5511978942689','aluno@gmail.com',NULL,NULL,NULL,NULL,NULL),(11,'Edson Soares','1364995','5511978942689','aluno@gmail.com',NULL,NULL,NULL,NULL,NULL),(12,'Jose Augosto','1271954','5511978942689','aluno@gmail.com',NULL,NULL,NULL,NULL,NULL),(13,'Leonardo Leite','1762559','5511978942689','aluno@gmail.com',NULL,NULL,NULL,NULL,NULL),(14,'Leonardo Salgado','1762036','5511978942689','aluno@gmail.com',NULL,NULL,NULL,NULL,NULL),(15,'Luciana Durante','1565893','5511978942689','aluno@gmail.com',NULL,NULL,NULL,NULL,NULL),(47,'Arthur Azevedo','123456','','aluno@gmail.com','','Jardim ','Sao Paulo','SP',7133190),(59,'Renato Gaucho','1326598','','aluno@gmail.com','Rua A','Jabuca','Sao Paulo','SP',5659800),(60,'Maria Antonieta','1659862','','aluno@gmail.com','Rua das Flores','Jardim Divinolandia','Guarulhos','SP',5659800);
 /*!40000 ALTER TABLE `aluno` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +57,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-08-30  0:12:39
+-- Dump completed on 2018-09-05 20:46:22

@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Cadastro de Aluno</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<h2>Cadastrar Aluno</h2>
@@ -14,6 +15,29 @@
 		<p class="prontuario">
 			<label for="prontuario">Prontuario :</label>
 			<input type="text" id="prontuarioid" maxlength="7"  placeholder="xxxxxxxxxx" required="required" name="prontuario" pattern="[0-9]+$" />
+		</p>
+		<p class="endereco">
+			<label for="endereco">Endereço: </label>
+			<input type= enderecoid="endid" placeholder="Av Jabaquara, 60" name="endereco" pattern="[a-zA-Z\s]+$" required="required" />
+		</p>
+		</p>
+		<p class="bairro">
+			<label for="bairro">Bairro: </label>
+			<input type= id="bairroid" placeholder="Jabaquara," name="bairro" pattern="[a-zA-Z\s]+$" required="required" />
+		</p>
+		</p>
+		<p class="cidade">
+			<label for="cidade">Cidade: </label>
+			<input type= id="cidadeid" placeholder="Sao Paulo" name="cidade" pattern="[a-zA-Z\s]+$" required="required" />
+		</p>
+
+		<p class="estado">
+			<label for="estado">UF: </label>
+			<input type= estadoid="estadoid" placeholder="SP" name="estado" pattern="[A-Z\s]+$" required="required" />
+		</p>
+		<p class="cep">
+			<label for="cep">Cep: </label>
+			<input type= cepid="cepid" placeholder="05665040" name="cep" pattern="[[0-9]{8}+$" required="required" maxlength="8" />
 		</p>
 		
 		<p class="fone">
