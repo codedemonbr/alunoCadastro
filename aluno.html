@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cadastro de Aluno</title>
+	<!-- <link rel="stylesheet" href="style.css"> -->
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+	<h2>Cadastrar Aluno</h2>
+	<form name="meu_form" method="POST" action="aluno.php">
+		<p class="nome">
+			<label for="nome">Nome: </label>
+			<input type="text" id="nomeid" placeholder="Joao da Silva" required="required" name="nome" pattern="[a-zA-Z\s]+$" />
+		</p>
+		<p class="prontuario">
+			<label for="prontuario">Prontuario :</label>
+			<input type="text" id="prontuarioid" maxlength="7"  placeholder="xxxxxxxxxx" required="required" name="prontuario" pattern="[0-9]+$" />
+		</p>
+		<p class="endereco">
+			<label for="endereco">Endereço: </label>
+			<input type= enderecoid="endid" placeholder="Av Jabaquara, 60" name="endereco" pattern="[a-zA-Z\s]+$" required="required" />
+		</p>
+		</p>
+		<p class="bairro">
+			<label for="bairro">Bairro: </label>
+			<input type= id="bairroid" placeholder="Jabaquara," name="bairro" pattern="[a-zA-Z\s]+$" required="required" />
+		</p>
+		</p>
+		<p class="cidade">
+			<label for="cidade">Cidade: </label>
+			<input type= id="cidadeid" placeholder="Sao Paulo" name="cidade" pattern="[a-zA-Z\s]+$" required="required" />
+		</p>
+
+		<p class="estado">
+			<label for="estado">UF: </label>
+			<input type= estadoid="estadoid" placeholder="SP" name="estado" pattern="[A-Z\s]+$" required="required" />
+		</p>
+		<p class="cep">
+			<label for="cep">Cep: </label>
+			<input type= cepid="cepid" placeholder="05665040" name="cep" pattern="[[0-9]{8}+$" required="required" maxlength="8" />
+		</p>
+		
+		<p class="fone">
+			<label for="fone">Telefone: </label>
+			<input type= id="foneid" placeholder="5511696969696" name="fone" pattern="[0-9]{13}+$" required="required" maxlength="13" />
+		</p>
+
+		<p>
+			<label for="email">Email: </label>
+			<input type="email" id="emailid"  maxlength="30" placeholder="joao@servidor-email.com" required="required" class="input-text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+
+		</p>
+
+		<p class="submit">
+			<input type="submit" onClick="cadastrar();" value="CADASTRAR" />
+		</p>
+	</form>
+</body>
+</html>

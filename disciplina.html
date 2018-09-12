@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css"  href="assets/css/main.css" />
+	<meta charset="utf-8">
+	<title>Cadastro de Disciplina</title>
+	<!-- <link rel="stylesheet" href="style.css"> -->
+	
+
+</head>
+<body>
+	<h2>Cadastrar Disciplina</h2>
+	<form name="meu_form" method="POST" action="disciplina.php">
+		
+		<p class="nome">
+			<label for="nome">Nome da Disciplina: </label>
+			<input type="text" id="nomeid" placeholder="Ferramentas WEB I" required="required" name="nome" pattern="[a-zA-Z\s]+$" />
+		</p>
+
+		<p class="sigla">
+			<label for="sigla">Sigla da Disciplina: </label>
+			<input type="text" id="siglaid" placeholder="FW1" required="required" name="sigla" />
+		</p>
+
+		<p class="carga">
+			<label for="carga">Carga Horária da Disciplina: </label>
+			<input type="text" id="cargaid" placeholder="60" required="required" pattern="[[0-9]{8}+$" name="carga" />
+		</p>
+
+		<p class="submit">
+			<input type="submit" onClick="cadastrar();" value="CADASTRAR" />
+		</p>
+	</form>
+</body>
+</html>
